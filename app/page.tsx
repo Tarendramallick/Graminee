@@ -14,12 +14,10 @@ export default function GramineeHomepage() {
       <section className="relative min-h-screen overflow-hidden">
         <Image src="/images/f1.png" alt="Graminee plants by the window" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black/20" />
-        <div className="flex justify-center items-center">
           <div className="bg-[#E5E0D8] w-[165px] h-[53px] opacity-100 rounded-[12px] flex justify-center items-center">
             <h2 className=" font-yaldeviextralight font-extralight text-[32px] leading-[100%] tracking-[0.17em] text-center align-middle text-foreground">
               graminēe
             </h2>
-          </div>
         </div>
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent p-6 sm:p-8">
           <p className="text-white text-sm sm:text-base max-w-md leading-relaxed">
