@@ -10,7 +10,8 @@ export default function GramineeHomepage() {
   return (
     <main className="bg-background text-foreground">
       {/* Hero Section */}
-      <section className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
+      {/* <section className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden"> */}
+      <section className="relative min-h-screen overflow-hidden">
         <Image src="/images/f1.png" alt="Graminee plants by the window" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-black/20" />
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent p-6 sm:p-8">
