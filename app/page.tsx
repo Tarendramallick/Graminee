@@ -9,54 +9,6 @@ export default function GramineeHomepage() {
 
   return (
     <main className="bg-background text-foreground">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 className="text-xl sm:text-2xl font-light tracking-wide text-foreground">graminee</h1>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden sm:flex gap-8 text-sm">
-            <a href="#gallery" className="hover:text-accent transition-colors">
-              Gallery
-            </a>
-            <a href="#contact" className="hover:text-accent transition-colors">
-              Contact
-            </a>
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="sm:hidden p-2 hover:bg-muted rounded-lg transition-colors"
-            aria-label="Toggle menu"
-          >
-            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-
-        {/* Mobile Navigation Menu */}
-        {menuOpen && (
-          <nav className="sm:hidden border-t border-border bg-background">
-            <div className="px-4 py-4 space-y-3 flex flex-col">
-              <a
-                href="#gallery"
-                className="block py-2 px-4 hover:bg-muted rounded-lg transition-colors text-sm"
-                onClick={() => setMenuOpen(false)}
-              >
-                Gallery
-              </a>
-              <a
-                href="#contact"
-                className="block py-2 px-4 hover:bg-muted rounded-lg transition-colors text-sm"
-                onClick={() => setMenuOpen(false)}
-              >
-                Contact
-              </a>
-            </div>
-          </nav>
-        )}
-      </header>
-
       {/* Hero Section */}
       <section className="relative h-96 sm:h-[500px] lg:h-[600px] overflow-hidden">
         <Image src="/images/f1.png" alt="Graminee plants by the window" fill className="object-cover" priority />
