@@ -21,19 +21,17 @@ export default function GramineeHomepage() {
           priority
         />
 
-        {/* Optional dark overlay */}
-        <div className="absolute inset-0 bg-black/20" />
+        {/* Optional Overlay */}
+        <div className="absolute inset-0 bg-black/10" />
 
-        {/* 🔥 Top-Centered Logo Box (Exactly like Figma hero) */}
-        <div className="absolute top-8 left-1/2 -translate-x-1/2">
-          <div className="bg-[#E5E0D8] w-[165px] h-[53px] rounded-[18px] flex justify-center items-center shadow-md">
-            <h2 className="font-yaldeviextralight font-extralight text-[32px] leading-[100%] tracking-[0.17em] text-center text-foreground">
-              graminēe
-            </h2>
-          </div>
+        {/* 🔥 Top-Left Text (exact like reference image) */}
+        <div className="absolute top-6 left-6">
+          <h2 className="font-yaldeviextralight font-extralight text-[28px] tracking-[0.17em] text-white/90">
+            graminēe
+          </h2>
         </div>
 
-        {/* Bottom text gradient */}
+        {/* Bottom gradient text */}
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent p-6 sm:p-8">
           <p className="text-white text-sm sm:text-base max-w-md leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
@@ -41,6 +39,7 @@ export default function GramineeHomepage() {
           </p>
         </div>
       </section>
+
 
       {/* Feature Section */}
       <section className="py-0 sm:py-16 lg:py-20 px-0 sm:px-6 lg:px-8">
