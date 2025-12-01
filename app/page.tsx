@@ -21,21 +21,23 @@ export default function GramineeHomepage() {
           priority
         />
 
-        {/* Optional Overlay */}
-        <div className="absolute inset-0 bg-black/10" />
+        {/* Soft overlay */}
+        <div className="absolute inset-0 bg-black/20" />
 
-        {/* 🔥 Top-Left Text (exact like reference image) */}
-        <div className="absolute top-6 left-6">
-          <h2 className="font-yaldeviextralight font-extralight text-[28px] tracking-[0.17em] text-white/90">
+        {/* TOP-LEFT TEXT (exact Figma font, spacing, position) */}
+        <div className="absolute top-6 left-6 z-20">
+          <h2
+            className="font-yaldeviextralight text-[32px] leading-[100%] tracking-[0.17em] text-white"
+            style={{ fontWeight: 275 }}
+          >
             graminēe
           </h2>
         </div>
 
         {/* Bottom gradient text */}
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent p-6 sm:p-8">
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent p-6 sm:p-8 z-10">
           <p className="text-white text-sm sm:text-base max-w-md leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
           </p>
         </div>
       </section>
