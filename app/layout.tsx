@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const yaldeviColombo = Yaldevi({
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-yaldevi",
 })
