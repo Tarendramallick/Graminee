@@ -107,7 +107,7 @@ export default function GramineeHomepage() {
       <section id="contact" className="w-full py-0 sm:py-16 lg:py-20 sm:px-6 lg:px-8">
         <div className="hidden md:block h-px bg-[#999999] w-full mb-12" />
 
-        <div className="md:hidden flex flex-col w-full">
+        <div className="md:hidden flex flex-col w-full min-h-screen">
           {/* Header with Logo */}
           <div className="w-full bg-muted/40 px-6 py-8 text-center">
             <h3 className="text-[32px] font-thin leading-tight tracking-[0.17em] text-[#595959] text-foreground mb-1">
