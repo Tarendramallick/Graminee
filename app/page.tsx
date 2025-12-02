@@ -59,7 +59,7 @@ export default function GramineeHomepage() {
           </div>
 
           {/* Right - Text */}
-          <div className="absolute left-[768px] w-[436px] h-[154px] items-center justify-center">
+          <div className="absolute left-[768px] w-[436px] h-[154px]">
             <h2 className="font-bold text-[15px] leading-[100%] tracking-[0.17em] text-[#595959] mb-4">Lorem Ipsum</h2>
 
             <p className="font-semibold text-[13px] leading-tight tracking-[0.17em] text-[#595959]">
