@@ -52,19 +52,21 @@ export default function GramineeHomepage() {
         </div>
 
         {/* Desktop: Grid layout without wrapper constraints */}
-        <div className="hidden md:grid grid-cols-2 gap-0 lg:gap-12 items-center">
-          {/* Left - Image */}
-          <div className="relative w-[604px] h-[808px] overflow-hidden bg-amber-100 rounded-r-2xl -ml-8">
-            <Image src="/images/f2.png" alt="Dried flowers arrangement" fill className="object-cover" />
+        <div className="hidden md:grid grid-cols-2 gap-12 items-center">
+          {/* Left Image */}
+          <div className="relative w-[604px] h-[808px] overflow-hidden rounded-r-2xl -ml-8">
+            <Image src="/images/f2.png" fill className="object-cover" />
           </div>
 
-          {/* Right - Text */}
-          <div className="absolute left-[768px] w-[436px] h-[154px]">
-            <h2 className="font-bold text-[15px] leading-[100%] tracking-[0.17em] text-[#595959] mb-4">Lorem Ipsum</h2>
+          {/* Right Text – no absolute positioning */}
+          <div className="flex flex-col justify-center max-w-[436px]">
+            <h2 className="font-bold text-[15px] tracking-[0.17em] text-[#595959] mb-4">
+              Lorem Ipsum
+            </h2>
 
             <p className="font-semibold text-[13px] leading-tight tracking-[0.17em] text-[#595959]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam.
             </p>
           </div>
         </div>
