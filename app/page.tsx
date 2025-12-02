@@ -9,7 +9,7 @@ export default function GramineeHomepage() {
       {/* Full-Screen Hero Section */}
       <section className="relative w-full h-screen overflow-hidden">
         {/* Background Image */}
-        <Image src="/images/f1.png" alt="Graminee plants by the window" fill className="object-cover" priority />
+        <Image src="/images/f1.png" alt="Graminee plants by the window" fill className="object-cover md:blur-none blur-[1px]" priority />
 
         <div className="absolute top-0 left-2 md:top-0 md:left-2 flex items-center justify-center font-sans">
           <div className="md:w-[165px] md:h-[53px] w-[120px] h-[40px] md:text-[32px] text-[24px] md:font-[200] font-[200] md:leading-[100%] leading-[100%] md:tracking-[0.17em] tracking-[0.15em] text-center flex items-center justify-center bg-transparent text-[#595959] md:text-[#E5E0D8]">
@@ -129,7 +129,7 @@ export default function GramineeHomepage() {
             <div className="flex flex-col items-center space-y-4">
               <p className="text-[24px] font-light leading-tight tracking-[0.17em] text-[#595959] text-foreground">お花が<br />お家に
               </p>
-              <Clock className="w-8 h-8 text-[#595959] stroke-[1] mt-4" />
+              <Clock className="w-8 h-8 text-[#595959] stroke-[1] mt-12" />
 
               <p className="text-[24px] font-light leading-none tracking-[0.17em] text-foreground">{"木｜金｜土"}</p>
               <p className="text-[24px] font-light leading-none tracking-[0.17em] text-muted-foreground">
