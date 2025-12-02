@@ -127,8 +127,7 @@ export default function GramineeHomepage() {
           <div className="w-full px-6 pt-4 py-12 space-y-8 flex flex-col items-center text-center bg-background min-h-screen">
             {/* Hours */}
             <div className="flex flex-col items-center space-y-4">
-              <p className="text-[24px] font-light leading-tight tracking-[0.17em] text-[#595959] text-foreground">
-                {"お花が\nお家に"}
+              <p className="text-[24px] font-light leading-tight tracking-[0.17em] text-[#595959] text-foreground">お花が<br />お家に
               </p>
               <Clock className="w-8 h-8 text-[#595959] stroke-[1] mt-4" />
 
