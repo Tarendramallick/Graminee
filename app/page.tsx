@@ -94,8 +94,7 @@ export default function GramineeHomepage() {
               { id: 6, src: "/images/gallery-2.png", alt: "Hand holding mixed flowers bouquet" },
               { id: 7, src: "/images/gallery-3.png", alt: "Orange and peach flowers in vase" },
               { id: 8, src: "/images/gallery-4.png", alt: "Hand holding white peonies bouquet" },
-            ]
-            .map((item) => (
+            ].map((item) => (
               <div
                 key={item.id}
                 className="relative h-[478px] rounded-t-[100px] sm:rounded-[5rem] overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 hover:shadow-lg transition-shadow duration-300 mb-8"
