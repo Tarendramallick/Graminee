@@ -55,7 +55,7 @@ export default function GramineeHomepage() {
         <div className="hidden md:grid grid-cols-2 gap-12 items-center">
           {/* Left Image */}
           <div className="relative w-[604px] h-[808px] overflow-hidden rounded-r-2xl -ml-8">
-            <Image src="/images/f2.png" fill className="object-cover" />
+            <Image src="/images/f2.png" alt="" fill className="object-cover" />
           </div>
 
           {/* Right Text – no absolute positioning */}
@@ -89,11 +89,12 @@ export default function GramineeHomepage() {
               { id: 2, src: "/images/gallery-2.png", alt: "Hand holding mixed flowers bouquet" },
               { id: 3, src: "/images/gallery-3.png", alt: "Orange and peach flowers in vase" },
               { id: 4, src: "/images/gallery-4.png", alt: "Hand holding white peonies bouquet" },
-              { id: 1, src: "/images/gallery-1.png", alt: "Colorful mixed bouquet arrangement" },
-              { id: 2, src: "/images/gallery-2.png", alt: "Hand holding mixed flowers bouquet" },
-              { id: 3, src: "/images/gallery-3.png", alt: "Orange and peach flowers in vase" },
-              { id: 4, src: "/images/gallery-4.png", alt: "Hand holding white peonies bouquet" },
-            ].map((item) => (
+              { id: 5, src: "/images/gallery-1.png", alt: "Colorful mixed bouquet arrangement" },
+              { id: 6, src: "/images/gallery-2.png", alt: "Hand holding mixed flowers bouquet" },
+              { id: 7, src: "/images/gallery-3.png", alt: "Orange and peach flowers in vase" },
+              { id: 8, src: "/images/gallery-4.png", alt: "Hand holding white peonies bouquet" },
+            ]
+            .map((item) => (
               <div
                 key={item.id}
                 className="relative h-[478px] rounded-t-[100px] sm:rounded-[5rem] overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 hover:shadow-lg transition-shadow duration-300 mb-8"
