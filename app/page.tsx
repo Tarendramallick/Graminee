@@ -20,33 +20,35 @@ export default function GramineeHomepage() {
         {/* Mobile: Center overlay */}
         <div className="md:hidden absolute inset-0 flex flex-col justify-center items-center px-6 py-12 text-center">
           <p className="font-semibold text-[13px] leading-[100%] tracking-[0.17em] text-center align-middle text-[#E5E0D8] w-[300px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            一輪の花がもたらす、シンプルな美しさをあなたの暮らしに。
           </p>
         </div>
 
         {/* Desktop: Bottom-left overlay */}
-        <div className="hidden md:flex absolute bottom-8 left-2 flex-col max-w-md space-y-4">
+        <div className="hidden md:flex absolute bottom-14 left-2 flex-col max-w-md space-y-4">
           <p className="font-semibold text-[13px] leading-[100%] tracking-[0.17em] align-middle text-[#E5E0D8]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            一輪の花がもたらす、シンプルな美しさをあなたの暮らしに。
           </p>
         </div>
       </section>
 
       {/* Feature Section */}
-      <section className="py-0 sm:py-16 lg:py-20 px-0 sm:px-6 lg:px-8">
+      <section className="py-0 sm:py-16 lg:py-4 px-0 sm:px-6 lg:px-2">
+        <div className="hidden md:flex md:w-[165px] md:h-[53px] md:text-[32px] md:font-[200] md:leading-[100%] md:tracking-[0.17em] items-start justify-start text-left text-[#595959] mb-12">
+          graminēe
+        </div>
+
+
         {/* Mobile: Full-width image with overlay content */}
         <div className="md:hidden relative w-screen left-1/2 right-1/2 -mx-[50vw] min-h-[100svh]">
           <Image src="/images/f2.png" alt="Dried flowers arrangement" fill className="object-cover" />
           <div className="absolute inset-0 flex flex-col justify-between items-center px-6 pt-20 pb-24 text-center">
             {/* Title – positioned near top but not touching */}
-            <h2 className="font-semibold text-[15px] tracking-[0.17em] text-[#E5E0D8]">Lorem ipsum</h2>
+            <h2 className="font-semibold text-[15px] tracking-[0.17em] text-[#E5E0D8]">季節を感じる、花のある空間</h2>
 
             {/* Paragraph – positioned near bottom but not touching */}
             <p className="text-sm  text-[13] text-[#E5E0D8] leading-[100%] max-w-[240px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              想いを伝えるときも、自分のための時間にも。 花は、言葉にできない気持ちにそっと寄り添います。
             </p>
           </div>
         </div>
@@ -61,25 +63,24 @@ export default function GramineeHomepage() {
           {/* Right Text – no absolute positioning */}
           <div className="flex flex-col justify-center max-w-[436px]">
             <h2 className="font-bold text-[15px] tracking-[0.17em] text-[#595959] mb-4">
-              Lorem Ipsum
+              季節を感じる、花のある空間
             </h2>
 
             <p className="font-semibold text-[13px] leading-tight tracking-[0.17em] text-[#595959]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam.
+              想いを伝えるときも、自分のための時間にも。<br />花は、言葉にできない気持ちにそっと寄り添います。
             </p>
           </div>
         </div>
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
+      <section id="gallery" className="py-12 sm:py-16 lg:py-20 lg:mt-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
         <div className="max-w-6xl mx-auto items-center">
           <h2 className="font-bold text-[15px] leading-[100%] text-center tracking-[0.17em] text-[#595959] mb-4">
             Our Gallery
           </h2>
           <h2 className="font-semibold text-[13px] leading-[100%] text-center tracking-[0.17em] text-[#595959] mb-4">
-            Lorem ipsum dolor sit amet
+            ギャラリー
           </h2>
 
           {/* Gallery Grid - Updated to display 4 custom flower images */}
@@ -180,7 +181,7 @@ export default function GramineeHomepage() {
 
             <div className="text-center">
               <p className="text-[24px] font-light leading-tight tracking-[0.17em] text-[#595959] text-foreground">
-                {"お花が\nお家に"}
+                {"お花が \nお家に"}
               </p>
             </div>
           </div>
