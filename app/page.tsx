@@ -42,13 +42,13 @@ export default function GramineeHomepage() {
         {/* Mobile: Full-width image with overlay content */}
         <div className="md:hidden relative w-screen left-1/2 right-1/2 -mx-[50vw] min-h-[100svh]">
           <Image src="/images/f2.png" alt="Dried flowers arrangement" fill className="object-cover" />
-          <div className="absolute inset-0 flex flex-col justify-between items-center px-6 pt-20 pb-24 text-center">
+          <div className="absolute inset-0 flex flex-col justify-between items-center px-6 pt-14 pb-34 text-center">
             {/* Title – positioned near top but not touching */}
-            <h2 className="font-semibold text-[15px] tracking-[0.17em] text-[#E5E0D8]">季節を感じる、花のある空間</h2>
+            <h2 className="font-bold text-[15px] w-[130px] tracking-[0.17em] text-[#E5E0D8]">季節を感じる、花のある空間</h2>
 
             {/* Paragraph – positioned near bottom but not touching */}
-            <p className="text-sm  text-[13] text-[#E5E0D8] leading-[100%] max-w-[240px]">
-              想いを伝えるときも、自分のための時間にも。 花は、言葉にできない気持ちにそっと寄り添います。
+            <p className="font-semibold w-[340px] text-[13px] text-[#E5E0D8] leading-[100%] ">
+              想いを伝えるときも、自分のための時間にも。<br />花は、言葉にできない気持ちにそっと寄り添います。
             </p>
           </div>
         </div>
@@ -74,17 +74,17 @@ export default function GramineeHomepage() {
       </section>
 
       {/* Gallery Section */}
-      <section id="gallery" className="py-12 sm:py-16 lg:py-20 lg:mt-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
+      <section id="gallery" className="py-14 sm:py-16 lg:py-20 lg:mt-20 px-8 sm:px-6 lg:px-8 bg-muted/20">
         <div className="max-w-6xl mx-auto items-center">
           <h2 className="font-bold text-[15px] leading-[100%] text-center tracking-[0.17em] text-[#595959] mb-4">
             Our Gallery
           </h2>
-          <h2 className="font-semibold text-[13px] leading-[100%] text-center tracking-[0.17em] text-[#595959] mb-4">
+          <h2 className="font-semibold text-[13px] leading-[100%] text-center tracking-[0.17em] text-[#748873] mb-4">
             ギャラリー
           </h2>
 
           {/* Gallery Grid - Updated to display 4 custom flower images */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 sm:gap-6 mt-10">
             {[
               { id: 1, src: "/images/gallery-1.png", alt: "Colorful mixed bouquet arrangement" },
               { id: 2, src: "/images/gallery-2.png", alt: "Hand holding mixed flowers bouquet" },
@@ -180,7 +180,7 @@ export default function GramineeHomepage() {
 
             <div className="text-center">
               <p className="text-[24px] font-light leading-tight tracking-[0.17em] text-[#595959] text-foreground">
-                {"お花が \nお家に"}
+                お花が <br /> お家に
               </p>
             </div>
           </div>
