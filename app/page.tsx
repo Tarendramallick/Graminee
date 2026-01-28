@@ -136,7 +136,7 @@ export default function GramineeHomepage() {
 
               <p className="text-[24px] font-light leading-none tracking-[0.17em] text-foreground">{"木｜金｜土"}</p>
               <p className="text-[24px] font-light leading-none tracking-[0.17em] text-muted-foreground">
-                14:00 - 18:00
+                11:00 - 18:00
               </p>
             </div>
 
@@ -144,15 +144,15 @@ export default function GramineeHomepage() {
             <div className="flex flex-col items-center space-y-4">
               <Phone className="w-8 h-8 text-[#595959] stroke-[1]" />
 
-              <p className="text-[24px] font-light leading-none tracking-[0.17em] text-foreground">012-3456-789</p>
+              <p className="text-[24px] font-light leading-none tracking-[0.17em] text-foreground">090-7178-8714</p>
             </div>
 
             {/* Email */}
-            <div className="flex flex-col items-center space-y-4">
+            {/* <div className="flex flex-col items-center space-y-4">
               <Mail className="w-8 h-8 text-[#595959] stroke-[1]" />
 
               <p className="text-[24px] font-light leading-none tracking-[0.17em] text-foreground">info@email.com</p>
-            </div>
+            </div> */}
 
             {/* Location */}
             <div className="flex flex-col items-center space-y-4">
@@ -194,7 +194,7 @@ export default function GramineeHomepage() {
 
               <p className="text-[32px] font-light leading-none tracking-[0.17em] text-foreground">{"木｜金｜土"}</p>
               <p className="text-[32px] font-light leading-none tracking-[0.17em] text-muted-foreground">
-                14:00 - 18:00
+                11:00 - 18:00
               </p>
             </div>
 
@@ -202,19 +202,19 @@ export default function GramineeHomepage() {
             <div className="flex flex-col items-center space-y-4">
               <Phone className="w-8 h-8 text-[#595959] stroke-[1]" />
 
-              <p className="text-[32px] font-light leading-none tracking-[0.17em] text-foreground">012-3456-789</p>
+              <p className="text-[32px] font-light leading-none tracking-[0.17em] text-foreground">090-7178-8714</p>
             </div>
 
             {/* Email */}
-            <div className="flex flex-col items-center space-y-4">
+            {/* <div className="flex flex-col items-center space-y-4">
               <Mail className="w-8 h-8 text-[#595959] stroke-[1]" />
 
               <p className="text-[32px] font-light leading-none tracking-[0.17em] text-foreground">info@email.com</p>
-            </div>
+            </div> */}
 
             {/* Location */}
             <div className="flex flex-col items-center space-y-4">
-              <MapPin className="w-8 h-8 text-[#595959] stroke-[1]" />
+              <Image src="/Vector.svg" width={30} height={30} alt="Home" />
 
               <p className="text-[32px] font-light leading-none tracking-[0.17em] text-foreground">{"横浜"}</p>
             </div>
