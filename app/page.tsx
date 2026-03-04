@@ -86,14 +86,14 @@ export default function GramineeHomepage() {
           {/* Gallery Grid - Updated to display 4 custom flower images */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16 sm:gap-6 mt-10">
             {[
-              { id: 1, src: "/images/gallery-1.png", alt: "Colorful mixed bouquet arrangement" },
-              { id: 2, src: "/images/gallery-2.png", alt: "Hand holding mixed flowers bouquet" },
-              { id: 3, src: "/images/gallery-3.png", alt: "Orange and peach flowers in vase" },
-              { id: 4, src: "/images/gallery-4.png", alt: "Hand holding white peonies bouquet" },
-              { id: 5, src: "/images/gallery-1.png", alt: "Colorful mixed bouquet arrangement" },
-              { id: 6, src: "/images/gallery-2.png", alt: "Hand holding mixed flowers bouquet" },
-              { id: 7, src: "/images/gallery-3.png", alt: "Orange and peach flowers in vase" },
-              { id: 8, src: "/images/gallery-4.png", alt: "Hand holding white peonies bouquet" },
+              { id: 1, src: "/gallery/g1.jpg", alt: "Colorful mixed bouquet arrangement" },
+              { id: 2, src: "/gallery/g2.jpg", alt: "Hand holding mixed flowers bouquet" },
+              { id: 3, src: "/gallery/g3.jpg", alt: "Orange and peach flowers in vase" },
+              { id: 4, src: "/gallery/g4.jpg", alt: "Hand holding white peonies bouquet" },
+              { id: 5, src: "/gallery/g5.jpg", alt: "Colorful mixed bouquet arrangement" },
+              { id: 6, src: "/gallery/g6.jpg", alt: "Hand holding mixed flowers bouquet" },
+              { id: 7, src: "/gallery/g7.jpg", alt: "Orange and peach flowers in vase" },
+              { id: 8, src: "/gallery/g8.jpg", alt: "Hand holding white peonies bouquet" },
             ].map((item) => (
               <div
                 key={item.id}
@@ -108,7 +108,7 @@ export default function GramineeHomepage() {
 
       {/* Footer/Contact Section */}
       <section id="contact" className="w-full py-0 sm:py-16 lg:py-20 sm:px-6 lg:px-8">
-        <div className="hidden md:block h-px bg-[#999999] w-full mb-12" />
+        <div className="hidden md:block h-px bg-[#999999] w-full mb-2" />
 
         <div className="md:hidden flex flex-col w-full">
           {/* Header with Logo */}
@@ -121,7 +121,7 @@ export default function GramineeHomepage() {
             </p>
           </div>
 
-          <div className="relative w-full aspect-[3/4] max-h-[600px]">
+          <div className="relative w-full aspect-[3/4] max-h-[600px] rounded-2xl overflow-hidden">
             <Image src="/images/footer-hero.png" alt="Woman with red flowers" fill className="object-cover" />
           </div>
 
@@ -163,61 +163,75 @@ export default function GramineeHomepage() {
           </div>
         </div>
 
-        <div className="hidden md:grid max-w-6xl mx-auto grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 relative px-6 lg:px-0 pt-20">
-          {/* Left - Image & Text */}
-          <div className="space-y-6">
-            <div className="text-center">
-              <h3 className="text-[32px] font-light leading-tight tracking-[0.17em] text-[#595959] text-foreground mb-1">
-                graminēe
-              </h3>
-              <p className="text-[24px] font-light leading-tight tracking-[0.17em] text-[#595959] text-foreground">
-                生花店
-              </p>
-            </div>
-            <div className="relative w-[405px] h-[541px] rounded-[20px] overflow-hidden mx-auto">
-              <Image src="/images/footer-hero.png" alt="Woman with red flowers" fill className="object-cover" />
-            </div>
+        {/* Desktop Layout */}
+        <div className="hidden md:block max-w-7xl mx-auto px-2 lg:px-0 py-24 relative">
 
-            <div className="text-center">
-              <p className="text-[24px] font-light leading-tight tracking-[0.17em] text-[#595959] text-foreground">
+          {/* Main Grid */}
+          <div className="grid grid-cols-2 relative">
+
+            {/* Vertical Divider */}
+            <div className="absolute left-1/2 top-0 -translate-x-1/2 w-px h-full bg-[#9A9A9A]" />
+
+            {/* LEFT SIDE */}
+            <div className="flex flex-col items-center text-center space-y-12 pr-20">
+
+              {/* Logo */}
+              <div>
+                <h3 className="text-[32px] font-light tracking-[0.25em] text-[#595959]">
+                  graminēe
+                </h3>
+                <p className="text-[22px] font-light tracking-[0.25em] text-[#595959] mt-2">
+                  生花店
+                </p>
+              </div>
+
+              {/* Image */}
+              <div className="relative w-full h-[600px] rounded-[28px] overflow-hidden">
+                <Image
+                  src="/images/footer-hero.png"
+                  alt="Flower shop interior"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              {/* Tagline */}
+              <p className="text-[22px] font-light tracking-[0.25em] text-[#595959] leading-relaxed">
                 お花が <br /> お家に
               </p>
             </div>
-          </div>
-          <div className="absolute left-1/2 top-0 transform -translate-x-1/2 w-px h-[827px] bg-[#999999]" />
 
-          {/* Right - Contact Info */}
-          <div className="flex flex-col items-center space-y-20">
-            {/* Hours */}
-            <div className="flex flex-col items-center space-y-4">
-              <Clock className="w-8 h-8 text-[#595959] stroke-[1]" />
+            {/* RIGHT SIDE */}
+            <div className="flex flex-col items-center space-y-24 pl-20 text-center mt-2">
+              {/* Hours */}
+              <div className="flex flex-col items-center space-y-6">
+                <Clock className="w-8 h-8 text-[#595959] stroke-[1]" />
+                <p className="text-[30px] font-light tracking-[0.25em] text-[#595959]">
+                  木｜金｜土
+                </p>
+                <p className="text-[26px] font-light tracking-[0.25em] text-[#595959]">
+                  11:00 ~ 18:00
+                </p>
+              </div>
 
-              <p className="text-[32px] font-light leading-none tracking-[0.17em] text-foreground">{"木｜金｜土"}</p>
-              <p className="text-[32px] font-light leading-none tracking-[0.17em] text-muted-foreground">
-                11:00 - 18:00
-              </p>
+              {/* Phone */}
+              <div className="flex flex-col items-center space-y-6">
+                <Phone className="w-8 h-8 text-[#595959] stroke-[1]" />
+                <p className="text-[28px] font-light tracking-[0.25em] text-[#595959]">
+                  090-7178-8714
+                </p>
+              </div>
+
+              {/* Location */}
+              <div className="flex flex-col items-center space-y-6">
+                <MapPin className="w-8 h-8 text-[#595959] stroke-[1]" />
+                <p className="text-[28px] font-light tracking-[0.25em] text-[#595959]">
+                  横浜
+                </p>
+              </div>
+
             </div>
 
-            {/* Phone */}
-            <div className="flex flex-col items-center space-y-4">
-              <Phone className="w-8 h-8 text-[#595959] stroke-[1]" />
-
-              <p className="text-[32px] font-light leading-none tracking-[0.17em] text-foreground">090-7178-8714</p>
-            </div>
-
-            {/* Email */}
-            {/* <div className="flex flex-col items-center space-y-4">
-              <Mail className="w-8 h-8 text-[#595959] stroke-[1]" />
-
-              <p className="text-[32px] font-light leading-none tracking-[0.17em] text-foreground">info@email.com</p>
-            </div> */}
-
-            {/* Location */}
-            <div className="flex flex-col items-center space-y-4">
-              <Image src="/Vector.svg" width={30} height={30} alt="Home" />
-
-              <p className="text-[32px] font-light leading-none tracking-[0.17em] text-foreground">{"横浜"}</p>
-            </div>
           </div>
         </div>
       </section>
