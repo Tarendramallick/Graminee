@@ -122,7 +122,7 @@ export default function GramineeHomepage() {
           </div>
 
           <div className="relative w-full aspect-[3/4] max-h-[600px] rounded-2xl overflow-hidden">
-            <Image src="/images/footer-hero.png" alt="Woman with red flowers" fill className="object-cover" />
+            <Image src="/images/hero2.jpg" alt="Woman with red flowers" fill className="object-cover" />
           </div>
 
           {/* Contact Info */}
